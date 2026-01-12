@@ -1,0 +1,12 @@
+{
+  "Checklist": {
+    "GT1_ModelGeneralization": "PASS",
+    "GT2_DataGeneralization": "PASS",
+    "GT3_MethodGeneralization": "PASS"
+  },
+  "Rationale": {
+    "GT1_ModelGeneralization": "The three-phase inference pattern (early gains, middle plateau, late sharpening) generalizes to the finetuned model (lc0.onnx) which has different weights than the original model (lc0-original.onnx). Both models show consistent layer-wise probability evolution: original model shows Early=14.2%, Middle=18.1%, Late=25.2%, Full=45.8%; finetuned model shows Early=17.2%, Middle=22.4%, Late=27.1%, Full=51.3%. The pattern of progressive improvement through layers is preserved.",
+    "GT2_DataGeneralization": "The three-phase pattern holds on three types of new data not in the original dataset: (1) Random generated positions showing Early=17.4%, Middle=21.3%, Late=31.8%, Full=66.2%; (2) Famous historic game positions showing Early=6.7%, Middle=20.1%, Late=33.5%, Full=61.2%; (3) Opening theory positions showing Early=4.2%, Middle=13.6%, Late=23.8%, Full=42.1%. All datasets exhibit the characteristic progressive probability increase through layers.",
+    "GT3_MethodGeneralization": "The logit lens method (zero ablation of Post-LN transformer layers) successfully generalizes to analyzing other output heads beyond policy: (1) Value head (WDL predictions) reveals a distinct pattern from optimistic early layers (100% win) to realistic late layers (balanced WDL), (2) Moves-left head shows increasing game-length estimates through layers. The method is a general-purpose tool for analyzing how different outputs develop through transformer layers."
+  }
+}

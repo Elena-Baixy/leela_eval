@@ -1,0 +1,30 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+The consistency evaluation is complete. Here's a summary of the results:
+
+## Consistency Evaluation Summary
+
+### Output Files Created
+1. **`/net/scratch2/smallyan/leela_eval/evaluation/self_matching.ipynb`** - Contains the full analysis with verification steps
+2. **`/net/scratch2/smallyan/leela_eval/evaluation/consistency_evaluation.json`** - Contains the structured evaluation results
+
+### Results
+
+| Criterion | Result |
+|-----------|--------|
+| **CS1: Conclusions vs Original Results** | **PASS** |
+| **CS2: Implementation Follows Plan** | **FAIL** |
+
+### Key Findings
+
+**CS1 PASS**: All evaluable conclusions match the code outputs:
+- Forgetting analysis: cumulative solve rate (93.0%) > final layer rate (88.6%) ✓
+- Policy metrics (JS divergence, entropy, Kendall's τ) properly implemented ✓
+- Iterative refinement pattern confirmed in probability evolution ✓
+
+**CS2 FAIL**: One major plan step is missing:
+- **E2 "Real-world Lichess deployment"** is specified in `plan.md` but NOT implemented
+- No bot deployment code exists in the repository
+- No Lichess API integration for live games
+- All other plan steps (M1-M5, E1, E3-E6) are properly implemented

@@ -1,0 +1,22 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+The generalizability evaluation is complete. Here's a summary of the results:
+
+## Generalizability Evaluation Summary
+
+All three evaluation criteria **PASS**:
+
+| Criterion | Result | Key Evidence |
+|-----------|--------|--------------|
+| **GT1: Model Generalization** | PASS | The three-phase inference pattern generalizes to the finetuned model (lc0.onnx). Both original and finetuned models show consistent layer-wise progression (Early→Middle→Late→Full). |
+| **GT2: Data Generalization** | PASS | Pattern verified on 3 new data types: random positions, famous historic games (Immortal Game, Opera Game, etc.), and opening theory positions. All show the characteristic progressive probability increase. |
+| **GT3: Method Generalization** | PASS | The logit lens method works for analyzing multiple output heads: Policy (original), Value/WDL (reveals optimistic→realistic pattern), and Moves-left predictions. |
+
+## Output Files Created
+
+1. **`/net/scratch2/smallyan/leela_eval/evaluation/generalization_eval_summary.json`** (1,648 bytes)
+   - Contains the checklist results and detailed rationales
+
+2. **`/net/scratch2/smallyan/leela_eval/evaluation/generalization_eval.ipynb`** (192,559 bytes)
+   - Complete notebook with all evaluation code, results, and analysis
