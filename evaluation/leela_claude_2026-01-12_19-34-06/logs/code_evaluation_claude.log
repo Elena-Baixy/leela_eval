@@ -1,0 +1,23 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+ 7 | 
+ 8 | // (c) Anthropic PBC. All rights reserved. Use is subject to the Legal Agreements outlined here: https://code.claude.com/docs/en/legal-and-compliance.
+ 9 | 
+10 | // Version: 2.1.5
+11 | var _HB=Object.create;var{getPrototypeOf:THB,defineProperty:oe,getOwnPropertyNames:zkH,getOwnPropertyDescriptor:NHB}=Object,qkH=Object.prototype.hasOwnProperty,eA=(H,$,A)=>{for(let L of zkH($))if(!qkH.call(H,L)&&L!=="default")oe(H,L,{get:()=>$[L],enumerable:!0});if(A){for(let L of zkH($))if(!qkH.call(A,L)&&L!=="default")oe(A,L,{get:()=>$[L],enumerable:!0});return A}},b=(H,$,A)=>{A=H!=null?_HB(THB(H)):{};let L=$||!H||!H.__esModule?oe(A,"default",{value:H,enumerable:!0}):A;for(let I of zkH(H))if(!qkH.call(L,I))oe(L,I,{get:()=>H[I],enumerable:!0});return L},NxA=new WeakMap,zxA=(H)=>{var $=NxA.get(H),A;if($)return $;if($=oe({},"__esModule",{value:!0}),H&&typeof H==="object"||typeof H==="function")zkH(H).map((L)=>!qkH.call($,L)&&oe($,L,{get:()=>H[L],enumerable:!(A=NHB(H,L))||A.enumerable}));return NxA.set(H,$),$},N=(H,$)=>()=>($||H(($={exports:{}}).exports,$),$.exports);var eB=(H,$)=>{for(var A in $)oe(H,A,{get:$[A],enumerable:!0,configurable:!0,set:(L)=>$[A]=()=>L})};var F=(H,$)=>()=>(H&&($=H(H=0)),$);var qxA=N((
+12 | `);D=M[0]||"";for(let G=M.length-1;G>=1;G--){let U=M[G];if(U)yield U}}if(D)yield D}finally{await A.close()}}var F9,qgH,hIB=!1,uIB,kIB;var CL=F(()=>{q$();o$();FA();F9=b(require("fs")),qgH=require("fs/promises");uIB={cwd(){return process.cwd()},existsSync(H){return lW(`existsSync(${H})`,()=>F9.existsSync(H))},async stat(H){return qgH.stat(H)},statSync(H){return lW(`statSync(${H})`,()=>F9.statSync(H))},lstatSync(H){return lW(`lstatSync(${H})`,()=>F9.lstatSync(H))},readFileSync(H,$){return lW(`readFileSync(${H})`,()=>F9.readFileSync(H,{encoding:$.encoding}))},readFileBytesSync(H){return lW(`readFileBytesSync(${H})`,()=>F9.readFileSync(H))},readSync(H,$){return lW(`readSync(${H}, ${$.length} bytes)`,()=>{let A=void 0;try{A=F9.openSync(H,"r");let L=Buffer.alloc($.length),I=F9.readSync(A,L,0,$.length,0);return{buffer:L,bytesRead:I}}finally{if(A)F9.closeSync(A)}})},appendFileSync(H,$,A){return lW(`appendFileSync(${H}, ${$.length} chars)`,()=>{if(!F9.existsSync(H)&&A?.mode!==void 0){let L=F9.openSync(H,"a",A.mode);try
+
+EDQUOT: unknown error, write
+      fd: 16,
+ syscall: "write",
+   errno: -122,
+    code: "EDQUOT"
+
+      at appendFileSync (unknown:1:1)
+      at /$bunfs/root/claude:12:1096
+      at lW (/$bunfs/root/claude:11:34641)
+      at appendFileSync (/$bunfs/root/claude:12:902)
+      at writeFn (/$bunfs/root/claude:12:4731)
+      at f (/$bunfs/root/claude:12:4119)
+

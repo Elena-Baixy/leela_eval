@@ -1,0 +1,43 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+Code evaluation complete. Here's the summary:
+
+## Code Evaluation Results for Leela Logit Lens
+
+**Evaluation outputs saved to:**
+- `/net/scratch2/smallyan/leela_eval/evaluation/code_critic_evaluation.ipynb`
+- `/net/scratch2/smallyan/leela_eval/evaluation/code_critic_summary.json`
+- `/net/scratch2/smallyan/leela_eval/evaluation/code_critic_details.csv`
+
+### Quantitative Metrics
+| Metric | Value |
+|--------|-------|
+| Total Code Blocks | 195 |
+| Runnable% | 74.4% |
+| Incorrect% | 2.1% |
+| Redundant% | 0.5% |
+| Irrelevant% | 2.1% |
+| **Correction-Rate%** | **0.0%** |
+
+### Binary Checklist
+- **C1 (All Runnable):** FAIL (due to environment dependencies)
+- **C2 (All Correct):** FAIL (4 empty cells)
+- **C3 (No Redundant):** FAIL (1 redundant import)
+- **C4 (No Irrelevant):** FAIL (4 empty cells)
+
+### Key Finding
+**The code quality is excellent.** All 50 non-runnable cells failed due to environment dependencies (LaTeX, Monaco font, missing pre-generated data files, BayesElo), not code bugs. The Correction-Rate is 0% because no actual code fixes were needed.
+
+### Per-File Summary
+| File | Runnable | Rate |
+|------|----------|------|
+| evaluate_puzzles.py | 4/4 | 100% |
+| evaluate_concepts.py | 3/3 | 100% |
+| tournament.py | 5/5 | 100% |
+| demo.ipynb | 34/38 | 89.5% |
+| policy_metrics.ipynb | 48/57 | 84.2% |
+| figure1.ipynb | 18/29 | 62.1% |
+| forgotten_puzzle_figure.ipynb | 15/26 | 57.7% |
+| tournament_results.ipynb | 9/16 | 56.2% |
+| puzzle_results.ipynb | 9/17 | 52.9% |

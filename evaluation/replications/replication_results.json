@@ -1,0 +1,36 @@
+{
+  "experiment": "Iterative Inference Replication",
+  "n_positions": 100,
+  "seed": 42,
+  "device": "cuda",
+  "metrics": {
+    "js_divergence": {
+      "early_mean": 0.7732730718450518,
+      "middle_mean": 0.6522068459751302,
+      "late_mean": 0.3796050569334449
+    },
+    "entropy": {
+      "early_mean": 0.5253515343415378,
+      "middle_mean": 0.5387453110310669,
+      "late_mean": 0.5174808111081927
+    },
+    "kendall_tau": {
+      "early_mean": -0.02208151325798384,
+      "middle_mean": 0.21803529803529806,
+      "late_mean": 0.5369588744588745,
+      "early_change": 0.3136363636363636,
+      "middle_change": 0.09242424242424241,
+      "late_change": 0.7575757575757576
+    },
+    "top_prediction": {
+      "early_mean": 0.03294190228916705,
+      "middle_mean": 0.11512269824743271,
+      "late_mean": 0.2820074148476124
+    }
+  },
+  "three_phase_verification": {
+    "early_rapid_gain": true,
+    "middle_plateau": true,
+    "late_sharpening": true
+  }
+}
