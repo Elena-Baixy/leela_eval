@@ -1,0 +1,28 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+The consistency evaluation has been completed. Here's a summary of what was done:
+
+## Evaluation Results
+
+### CS1: Conclusions vs Original Results — **PASS**
+All evaluable conclusions in the documentation match the implementation notebook results:
+- **Tournament Elo ratings**: Exact match between documentation Table 1 and `tournament_results.ipynb` for both τ=0 and τ=1
+- **Puzzle solving**: Verified cumulative solve rate (93.0%) > final layer rate (88.6%), confirming the "forgotten puzzles" phenomenon
+- **Three-phase progression**: Confirmed numerically - early phase (+564 Elo), middle plateau (+50 Elo), late strengthening (+1180 Elo)
+- **Post-LN logit lens methodology**: Implementation matches the described zero ablation approach
+
+### CS2: Implementation Follows the Plan — **PASS**
+All plan methodology steps and experiments are implemented:
+1. Post-LN logit lens extension (`leela_logit_lens.py`)
+2. T82-768x15x24h model analysis (model file present)
+3. Performance evaluation (tournament.py, evaluate_puzzles.py)
+4. Intermediate policy dynamics (policy_metrics.ipynb)
+5. Layer-wise concept preferences (evaluate_concepts.py with Stockfish 8)
+6. All 6 planned experiments have corresponding implementation
+
+## Created Files
+Location: `/net/scratch2/smallyan/leela_eval/evaluation/`
+
+1. **self_matching.ipynb** (17,028 bytes) - Detailed evaluation notebook with verification code
+2. **consistency_evaluation.json** (1,485 bytes) - JSON summary with checklist and rationale
