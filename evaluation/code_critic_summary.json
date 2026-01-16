@@ -1,26 +1,69 @@
 {
-  "Runnable_Percentage": 68.80733944954129,
-  "Incorrect_Percentage": 0.0,
-  "Redundant_Percentage": 0.9174311926605505,
-  "Irrelevant_Percentage": 1.834862385321101,
-  "Correction_Rate_Percentage": 0.0,
-  "Issues": {
-    "Runnable_Issues_Exist": true,
-    "Output_Mismatch_Exists": false,
-    "Incorrect_Exists": false,
-    "Redundant_Exists": true,
-    "Irrelevant_Exists": true
+  "project": "leela_eval",
+  "evaluation_date": "2026-01-16",
+  "total_blocks": 113,
+  "code_blocks": 113,
+  "metrics": {
+    "runnable_count": 85,
+    "not_runnable_count": 28,
+    "incorrect_count": 0,
+    "redundant_count": 4,
+    "irrelevant_count": 0,
+    "runnable_pct": 75.22,
+    "incorrect_pct": 0.0,
+    "redundant_pct": 3.54,
+    "irrelevant_pct": 0.0,
+    "correction_rate_pct": 0.0
   },
-  "Checklist": {
-    "C1_All_Runnable": "FAIL",
-    "C2_All_Correct": "PASS",
-    "C3_No_Redundant": "FAIL",
-    "C4_No_Irrelevant": "FAIL"
+  "checklist": {
+    "C1": {
+      "criterion": "All code blocks runnable without errors",
+      "pass": false,
+      "rationale": "28 blocks failed to run. Primary causes: (1) LaTeX not installed - 18 blocks use text.usetex=True for publication-quality plots; (2) Missing data files - interesting_puzzles_history.pkl not present; (3) Missing external tools - BayesElo binary and tournament PGN files not available; (4) Cascading dependencies - some blocks depend on outputs from failed blocks."
+    },
+    "C2": {
+      "criterion": "No implementation produces incorrect results",
+      "pass": true,
+      "rationale": "All runnable code produces correct results matching the paper's methodology. The LeelaLogitLens correctly implements zero ablation for Post-LN transformers. Policy metrics (JS divergence, entropy, Kendall's tau) compute correctly. Puzzle evaluation logic is sound."
+    },
+    "C3": {
+      "criterion": "No redundant code blocks",
+      "pass": false,
+      "rationale": "4 redundant blocks identified: 2 in demo.ipynb (duplicate model loading examples), 2 in policy_metrics.ipynb (unnecessary model/data reloading). These duplications serve demonstration purposes but could be consolidated."
+    },
+    "C4": {
+      "criterion": "No irrelevant code blocks",
+      "pass": true,
+      "rationale": "All code blocks serve the project's objectives: implementing logit lens for Leela Chess Zero, evaluating puzzles, running tournaments, computing policy metrics, and analyzing concept preferences. No dead code or unrelated functionality found."
+    }
   },
-  "Rationale": {
-    "C1_All_Runnable": "34 blocks failed to run. Main causes: missing data files (interesting_puzzles_history.pkl), missing external binaries (BayesElo, Stockfish, tournament games), and missing fonts/LaTeX for visualization rendering.",
-    "C2_All_Correct": "All implementations are logically correct. No bugs or incorrect implementations were found in the code logic.",
-    "C3_No_Redundant": "1 redundant block(s) found: layer_title function defined twice in demo.ipynb.",
-    "C4_No_Irrelevant": "2 irrelevant block(s) found: GPT-2 analysis cells in policy_metrics.ipynb are supplementary comparisons, not core Leela analysis."
-  }
+  "failure_summary": {
+    "latex_dependent_blocks": 18,
+    "missing_data_blocks": 5,
+    "missing_tools_blocks": 5,
+    "cascade_failures": 0,
+    "total_failures": 28
+  },
+  "sources_evaluated": [
+    "notebooks/demo.ipynb",
+    "notebooks/figure1.ipynb",
+    "notebooks/puzzle_results.ipynb",
+    "notebooks/tournament_results.ipynb",
+    "notebooks/policy_metrics.ipynb",
+    "scripts/evaluate_puzzles.py",
+    "scripts/tournament.py",
+    "scripts/evaluate_concepts.py",
+    "src/leela_logit_lens/core/leela_logit_lens.py",
+    "src/leela_logit_lens/tools/evaluate_puzzles.py",
+    "src/leela_logit_lens/tools/evaluate_concepts.py",
+    "src/leela_logit_lens/tools/plotting.py",
+    "src/leela_logit_lens/tools/tournament.py",
+    "src/leela_logit_lens/tools/utils.py",
+    "src/leela_logit_lens/tools/policy_metrics.py",
+    "src/leela_logit_lens/tools/puzzle_analysis.py",
+    "src/leela_logit_lens/tournament/constants.py",
+    "src/leela_logit_lens/tournament/engine.py",
+    "src/searchless_chess/engines/stockfish_engine.py",
+    "src/searchless_chess/engines/leela_engine.py"
+  ]
 }
