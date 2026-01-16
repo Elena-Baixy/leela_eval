@@ -1,0 +1,30 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+The evaluation is complete. Let me provide a summary:
+
+## Consistency Evaluation Summary
+
+**Documentation File:** `/net/scratch2/smallyan/open_question/leela_eval/logs/documentation.pdf`
+**Status:** **NOT FOUND**
+
+Since this is a Documentation-Only Evaluation and the specified documentation file does not exist, all checklist items have been marked as **NA** (Not Applicable).
+
+### Output Files Created:
+
+1. **Notebook:** `/net/scratch2/smallyan/open_question/leela_eval/doc_only_evaluation/self_matching.ipynb`
+   - Contains the evaluation methodology, issues identified, checklist table, and summary
+
+2. **JSON Summary:** `/net/scratch2/smallyan/open_question/leela_eval/doc_only_evaluation/consistency_evaluation.json`
+   - Contains all checklist items marked as NA with rationales explaining the missing documentation
+
+### Checklist Results:
+| Item | Status |
+|------|--------|
+| CS1: Results vs Conclusion | NA |
+| CS2: Plan vs Implementation | NA |
+| CS3: Effect Size | NA |
+| CS4: Justification | NA |
+| CS5: Statistical Significance | NA |
+
+The evaluation cannot be completed because the required documentation file is missing from the specified path.
