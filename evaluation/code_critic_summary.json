@@ -1,34 +1,37 @@
 {
-  "Runnable_Percentage": 100.0,
+  "Runnable_Percentage": 86.4,
   "Incorrect_Percentage": 0.0,
   "Redundant_Percentage": 0.0,
   "Irrelevant_Percentage": 0.0,
-  "Correction_Rate_Percentage": 100.0,
+  "Correction_Rate_Percentage": 0.0,
   "Issues": {
-    "Runnable_Issues_Exist": false,
+    "Runnable_Issues_Exist": true,
     "Output_Mismatch_Exists": false,
     "Incorrect_Exists": false,
     "Redundant_Exists": false,
     "Irrelevant_Exists": false
   },
   "Checklist": {
-    "C1_All_Runnable": "PASS",
+    "C1_All_Runnable": "FAIL",
     "C2_All_Correct": "PASS",
     "C3_No_Redundant": "PASS",
     "C4_No_Irrelevant": "PASS"
   },
   "Rationale": {
-    "C1_All_Runnable": "All 27 testable blocks executed without error. 4 blocks marked N/A due to external dependencies (modified Stockfish binary, pre-computed result files).",
-    "C2_All_Correct": "All 31 blocks implement their described computation correctly. Core logit lens ablation, policy metrics, puzzle evaluation, and tournament engine all match expected functionality.",
-    "C3_No_Redundant": "No redundant code blocks found. Each module serves a distinct purpose in the analysis pipeline.",
-    "C4_No_Irrelevant": "All code blocks contribute to the project goals defined in the Plan (logit lens analysis of Leela Chess Zero)."
+    "C1_All_Runnable": "6 blocks are not runnable due to missing external dependencies (Stockfish, BayesElo) and pre-generated data files (puzzle_results.csv, tournament_games.pgn)",
+    "C2_All_Correct": "All evaluated implementations are correct. No implementation errors found in the code logic.",
+    "C3_No_Redundant": "No redundant code blocks found. Each block serves a unique purpose in the analysis.",
+    "C4_No_Irrelevant": "All code blocks contribute to the project goal as defined in the Plan and CodeWalkthrough."
   },
-  "Special_cases": {
+  "Special_Cases": {
     "External_Dependencies": [
-      "Modified Stockfish 8 binary not built (scripts/evaluate_concepts.py)",
-      "Pre-computed puzzle_results.csv not generated (notebooks/puzzle_results.ipynb)",
-      "Pre-computed tournament_games.pgn not generated (notebooks/tournament_results.ipynb)",
-      "Pre-computed concept_deltas.pkl not generated"
+      "Stockfish binary (required for tournament.py and evaluate_concepts.py)",
+      "BayesElo binary (required for tournament_results.ipynb)"
+    ],
+    "Missing_Data_Files": [
+      "results/puzzle_results.csv (needs generation by evaluate_puzzles.py)",
+      "results/tournament_games_temp_*.pgn (needs generation by tournament.py)",
+      "data/interesting_puzzles_history.pkl (alternative file exists)"
     ]
   }
 }
