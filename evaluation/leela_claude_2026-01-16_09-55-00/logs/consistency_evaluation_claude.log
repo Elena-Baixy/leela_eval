@@ -1,0 +1,22 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+The consistency evaluation is complete. Here's a summary of the results:
+
+## Consistency Evaluation Results
+
+All 5 checklist items **PASS**:
+
+| Criterion | Status | Summary |
+|-----------|--------|---------|
+| **CS1** Results vs Conclusion | **PASS** | Tournament Elo values match exactly between documentation and notebooks. Three-phase pattern (early +564, middle +50 plateau, late +1180 Elo) is supported by data. |
+| **CS2** Plan vs Implementation | **PASS** | All 6 methodology steps and 6 experiments from plan.md are implemented in the codebase. |
+| **CS3** Effect Size | **PASS** | Effects are clearly non-trivial: 1820 Elo total improvement, 60x improvement rates in final phase, Kendall's τ change from ~0 to ~0.8. |
+| **CS4** Justification | **PASS** | All design choices explicitly justified (citations, methodology explanations). Limitations acknowledged in Appendix A. |
+| **CS5** Statistical Significance | **PASS** | Key results include uncertainty measures: BayesElo CIs, percentile bands, 95% CIs for concept preferences. |
+
+## Output Files Created
+
+1. **`/net/scratch2/smallyan/leela_eval/evaluation/self_matching.ipynb`** - Contains the full analysis, verification steps, and binary checklist summary
+
+2. **`/net/scratch2/smallyan/leela_eval/evaluation/consistency_evaluation.json`** - Contains the structured checklist results and rationales in the required JSON format

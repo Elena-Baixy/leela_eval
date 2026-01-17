@@ -1,0 +1,210 @@
+block,runnable,correct,redundant,irrelevant,notes,file
+demo.ipynb Cell 1,Y,Y,N,N,Imports and path setup,demo.ipynb
+demo.ipynb Cell 2,Y,Y,N,N,Device setup (CUDA),demo.ipynb
+demo.ipynb Cell 3,Y,Y,N,N,Load Lc0sight model,demo.ipynb
+demo.ipynb Cell 4,Y,Y,N,N,Initialize LeelaLogitLens,demo.ipynb
+demo.ipynb Cell 5,Y,Y,N,N,Create LeelaBoard from FEN,demo.ipynb
+demo.ipynb Cell 6,Y,Y,N,N,Single layer lens application,demo.ipynb
+demo.ipynb Cell 7,Y,Y,N,N,Top k moves extraction,demo.ipynb
+demo.ipynb Cell 8,Y,Y,N,N,Multi-layer lens application,demo.ipynb
+demo.ipynb Cell 9,Y,Y,N,N,Print multi-layer results,demo.ipynb
+demo.ipynb Cell 10,Y,Y,N,N,Matplotlib imports,demo.ipynb
+demo.ipynb Cell 11,Y,Y,N,N,Plotting configuration,demo.ipynb
+demo.ipynb Cell 12,Y,Y,N,N,Layer probabilities plot,demo.ipynb
+demo.ipynb Cell 13,Y,Y,N,N,Square probabilities analysis,demo.ipynb
+demo.ipynb Cell 14,Y,Y,N,N,Interactive board display,demo.ipynb
+demo.ipynb Cell 15,Y,Y,N,N,Iceberg imports,demo.ipynb
+demo.ipynb Cell 16,Y,Y,N,N,Figure visualization setup,demo.ipynb
+demo.ipynb Cell 17,Y,Y,N,N,layer_title function definition,demo.ipynb
+demo.ipynb Cell 18,Y,Y,N,N,Create visualization figure,demo.ipynb
+demo.ipynb Cell 19,Y,Y,N,N,Display figure,demo.ipynb
+demo.ipynb Cell 20,Y,Y,N,N,Load puzzle data,demo.ipynb
+demo.ipynb Cell 21,N,Y,N,N,Missing interesting_puzzles_history.pkl,demo.ipynb
+demo.ipynb Cell 22,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 23,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 24,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 25,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 26,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 27,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 28,Y,Y,N,N,create_split_probability_tables function,demo.ipynb
+demo.ipynb Cell 29,N,Y,N,N,Depends on missing file data,demo.ipynb
+demo.ipynb Cell 30,Y,Y,Y,N,Duplicates layer_title from Cell 17,demo.ipynb
+demo.ipynb Cell 31,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 32,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 33,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 34,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 35,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 36,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 37,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 38,N,Y,N,N,Depends on missing file,demo.ipynb
+demo.ipynb Cell 39,N,Y,N,N,Depends on missing file,demo.ipynb
+figure1.ipynb Cell 1,Y,Y,N,N,Imports and path setup,figure1.ipynb
+figure1.ipynb Cell 2,Y,Y,N,N,Device setup (CUDA),figure1.ipynb
+figure1.ipynb Cell 3,Y,Y,N,N,Load Lc0sight model,figure1.ipynb
+figure1.ipynb Cell 4,Y,Y,N,N,Initialize LeelaLogitLens,figure1.ipynb
+figure1.ipynb Cell 5,Y,Y,N,N,Create LeelaBoard from FEN,figure1.ipynb
+figure1.ipynb Cell 6,Y,Y,N,N,Get layer indices,figure1.ipynb
+figure1.ipynb Cell 7,Y,Y,N,N,Multi-layer lens application,figure1.ipynb
+figure1.ipynb Cell 8,Y,Y,N,N,Iceberg imports,figure1.ipynb
+figure1.ipynb Cell 9,Y,Y,N,N,LeelaForwardPass class definition,figure1.ipynb
+figure1.ipynb Cell 10,Y,Y,N,N,Visualization helper functions,figure1.ipynb
+figure1.ipynb Cell 11,Y,Y,N,N,Color schemes,figure1.ipynb
+figure1.ipynb Cell 12,Y,Y,N,N,Figure layout configuration,figure1.ipynb
+figure1.ipynb Cell 13,Y,Y,N,N,Board rendering,figure1.ipynb
+figure1.ipynb Cell 14,Y,Y,N,N,Policy visualization,figure1.ipynb
+figure1.ipynb Cell 15,Y,Y,N,N,Layer annotations,figure1.ipynb
+figure1.ipynb Cell 16,Y,Y,N,N,Arrow rendering,figure1.ipynb
+figure1.ipynb Cell 17,Y,Y,N,N,Figure composition,figure1.ipynb
+figure1.ipynb Cell 18,Y,Y,N,N,Display figure,figure1.ipynb
+figure1.ipynb Cell 19,Y,Y,N,N,Save figure,figure1.ipynb
+figure1.ipynb Cell 20,Y,Y,N,N,Additional visualization setup,figure1.ipynb
+figure1.ipynb Cell 21,Y,Y,N,N,Probability table helper,figure1.ipynb
+figure1.ipynb Cell 22,Y,Y,N,N,Table formatting,figure1.ipynb
+figure1.ipynb Cell 23,Y,Y,N,N,Table styling,figure1.ipynb
+figure1.ipynb Cell 24,Y,Y,N,N,Table generation,figure1.ipynb
+figure1.ipynb Cell 25,Y,Y,N,N,Display probability tables,figure1.ipynb
+figure1.ipynb Cell 26,Y,Y,Y,N,Duplicates create_split_probability_tables from demo.ipynb,figure1.ipynb
+figure1.ipynb Cell 27,Y,Y,N,N,Final figure assembly,figure1.ipynb
+figure1.ipynb Cell 28,Y,Y,N,N,Export to PDF,figure1.ipynb
+puzzle_results.ipynb Cell 1,Y,Y,N,N,Imports,puzzle_results.ipynb
+puzzle_results.ipynb Cell 2,Y,Y,N,N,Load puzzle_results.csv,puzzle_results.ipynb
+puzzle_results.ipynb Cell 3,Y,Y,N,N,Data preprocessing,puzzle_results.ipynb
+puzzle_results.ipynb Cell 4,Y,Y,N,N,Solve rate calculation,puzzle_results.ipynb
+puzzle_results.ipynb Cell 5,Y,Y,N,N,Group by difficulty,puzzle_results.ipynb
+puzzle_results.ipynb Cell 6,Y,Y,N,N,Plot configuration,puzzle_results.ipynb
+puzzle_results.ipynb Cell 7,Y,Y,N,N,Solve rate by layer plot,puzzle_results.ipynb
+puzzle_results.ipynb Cell 8,Y,Y,N,N,Difficulty breakdown,puzzle_results.ipynb
+puzzle_results.ipynb Cell 9,Y,Y,N,N,Heatmap visualization,puzzle_results.ipynb
+puzzle_results.ipynb Cell 10,Y,Y,N,N,Statistical analysis,puzzle_results.ipynb
+puzzle_results.ipynb Cell 11,Y,Y,N,N,Phase identification,puzzle_results.ipynb
+puzzle_results.ipynb Cell 12,Y,Y,N,N,Improvement rate calculation,puzzle_results.ipynb
+puzzle_results.ipynb Cell 13,Y,Y,N,N,Plot improvement rates,puzzle_results.ipynb
+puzzle_results.ipynb Cell 14,Y,Y,N,N,Summary statistics,puzzle_results.ipynb
+puzzle_results.ipynb Cell 15,Y,Y,N,N,Save results,puzzle_results.ipynb
+puzzle_results.ipynb Cell 16,Y,Y,N,N,Final visualization,puzzle_results.ipynb
+tournament_results.ipynb Cell 1,Y,Y,N,N,Imports,tournament_results.ipynb
+tournament_results.ipynb Cell 2,Y,Y,N,N,Load tournament_games.pgn,tournament_results.ipynb
+tournament_results.ipynb Cell 3,Y,Y,N,N,Parse PGN games,tournament_results.ipynb
+tournament_results.ipynb Cell 4,Y,Y,N,N,Extract results,tournament_results.ipynb
+tournament_results.ipynb Cell 5,Y,Y,N,N,BayesElo calculation setup,tournament_results.ipynb
+tournament_results.ipynb Cell 6,Y,Y,N,N,Run BayesElo,tournament_results.ipynb
+tournament_results.ipynb Cell 7,Y,Y,N,N,Parse Elo results,tournament_results.ipynb
+tournament_results.ipynb Cell 8,Y,Y,N,N,Create Elo DataFrame,tournament_results.ipynb
+tournament_results.ipynb Cell 9,Y,Y,N,N,Plot configuration,tournament_results.ipynb
+tournament_results.ipynb Cell 10,Y,Y,N,N,Elo by layer plot,tournament_results.ipynb
+tournament_results.ipynb Cell 11,Y,Y,N,N,Error bars,tournament_results.ipynb
+tournament_results.ipynb Cell 12,Y,Y,N,N,Phase analysis,tournament_results.ipynb
+tournament_results.ipynb Cell 13,Y,Y,N,N,Elo improvement rate,tournament_results.ipynb
+tournament_results.ipynb Cell 14,Y,Y,N,N,Summary statistics,tournament_results.ipynb
+tournament_results.ipynb Cell 15,Y,Y,N,N,Save results,tournament_results.ipynb
+tournament_results.ipynb Cell 16,Y,Y,N,N,Final visualization,tournament_results.ipynb
+policy_metrics.ipynb Cell 1,Y,Y,N,N,Imports,policy_metrics.ipynb
+policy_metrics.ipynb Cell 2,Y,Y,N,N,Load CCRL data,policy_metrics.ipynb
+policy_metrics.ipynb Cell 3,Y,Y,N,N,Data sampling,policy_metrics.ipynb
+policy_metrics.ipynb Cell 4,Y,Y,N,N,Device setup,policy_metrics.ipynb
+policy_metrics.ipynb Cell 5,Y,Y,N,N,Model loading,policy_metrics.ipynb
+policy_metrics.ipynb Cell 6,Y,Y,N,N,LeelaLogitLens initialization and configuration,policy_metrics.ipynb
+policy_metrics.ipynb Cell 7,Y,Y,N,N,LeelaLogitLens initialization and configuration,policy_metrics.ipynb
+policy_metrics.ipynb Cell 8,Y,Y,N,N,LeelaLogitLens initialization and configuration,policy_metrics.ipynb
+policy_metrics.ipynb Cell 9,Y,Y,N,N,LeelaLogitLens initialization and configuration,policy_metrics.ipynb
+policy_metrics.ipynb Cell 10,Y,Y,N,N,LeelaLogitLens initialization and configuration,policy_metrics.ipynb
+policy_metrics.ipynb Cell 11,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 12,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 13,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 14,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 15,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 16,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 17,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 18,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 19,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 20,Y,Y,N,N,JS-divergence computation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 21,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 22,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 23,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 24,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 25,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 26,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 27,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 28,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 29,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 30,Y,Y,N,N,Entropy calculation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 31,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 32,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 33,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 34,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 35,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 36,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 37,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 38,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 39,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 40,Y,Y,N,N,Top move probability analysis,policy_metrics.ipynb
+policy_metrics.ipynb Cell 41,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 42,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 43,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 44,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 45,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 46,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 47,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 48,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 49,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 50,Y,Y,N,N,Kendall's tau correlation,policy_metrics.ipynb
+policy_metrics.ipynb Cell 51,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 52,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 53,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 54,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 55,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 56,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 57,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 58,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 59,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 60,Y,Y,N,N,Plotting and visualization,policy_metrics.ipynb
+policy_metrics.ipynb Cell 61,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 62,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 63,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 64,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 65,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 66,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 67,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+policy_metrics.ipynb Cell 68,Y,Y,N,N,Summary and statistics,policy_metrics.ipynb
+forgotten_puzzle_figure.ipynb Cell 1,Y,Y,N,N,Imports and setup,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 2,Y,Y,N,N,Device configuration,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 3,Y,Y,N,N,Model loading,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 4,Y,Y,N,N,LeelaLogitLens init,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 5,Y,Y,N,N,Puzzle data loading and preprocessing,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 6,Y,Y,N,N,Puzzle data loading and preprocessing,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 7,Y,Y,N,N,Puzzle data loading and preprocessing,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 8,N,Y,N,N,Puzzle data loading and preprocessing - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 9,N,Y,N,N,Puzzle data loading and preprocessing - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 10,N,Y,N,N,Puzzle data loading and preprocessing - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 11,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 12,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 13,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 14,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 15,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 16,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 17,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 18,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 19,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 20,N,Y,N,N,Solution tracking across layers - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 21,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 22,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 23,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 24,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 25,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 26,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 27,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 28,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 29,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 30,N,Y,N,N,Forgotten solutions analysis - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 31,N,Y,N,N,Visualization and figure generation - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 32,N,Y,N,N,Visualization and figure generation - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 33,N,Y,N,N,Visualization and figure generation - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 34,N,Y,N,N,Visualization and figure generation - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 35,N,Y,N,N,Visualization and figure generation - missing data dependency,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 36,Y,Y,N,N,Visualization and figure generation,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 37,Y,Y,N,N,Visualization and figure generation,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 38,Y,Y,N,N,Visualization and figure generation,forgotten_puzzle_figure.ipynb
+forgotten_puzzle_figure.ipynb Cell 39,Y,Y,N,N,Visualization and figure generation,forgotten_puzzle_figure.ipynb
+scripts/evaluate_puzzles.py,Y,Y,N,N,Driver script for puzzle evaluation with batching,scripts/evaluate_puzzles.py
+scripts/evaluate_concepts.py,Y,Y,N,N,Driver script for concept delta evaluation using Stockfish,scripts/evaluate_concepts.py
+scripts/tournament.py,Y,Y,N,N,Tournament runner for BayesElo ratings,scripts/tournament.py

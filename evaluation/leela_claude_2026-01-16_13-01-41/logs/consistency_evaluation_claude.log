@@ -1,0 +1,35 @@
+
+🚀 Launching Claude Code with Scribe notebook tools enabled...
+
+The consistency evaluation is complete. Here's a summary of the results:
+
+## Consistency Evaluation Summary
+
+**Repository:** `/net/scratch2/smallyan/leela_eval`
+
+### Binary Checklist Results
+
+| Criterion | Result |
+|-----------|--------|
+| **CS1: Conclusion vs Original Results** | **PASS** |
+| **CS2: Implementation Follows the Plan** | **PASS** |
+| **CS3: Effect Size** | **PASS** |
+| **CS4: Justification** | **PASS** |
+| **CS5: Statistical Significance** | **PASS** |
+
+### Key Findings
+
+1. **CS1 (PASS):** All documented conclusions (tournament Elo ratings, puzzle solve rates) match the originally recorded results in the implementation notebooks.
+
+2. **CS2 (PASS):** All methodology steps and experiments from plan.md are reflected in the implementation, including the Post-LN logit lens extension, tournament evaluation, puzzle analysis, and concept preference analysis.
+
+3. **CS3 (PASS):** Effects are clearly non-trivial: 1820 Elo points total improvement, 4.4% forgotten puzzle rate, negative-to-positive Kendall's τ transition, and >60x improvement rate in the final phase for hard puzzles.
+
+4. **CS4 (PASS):** All key design choices are explicitly justified with citations, mathematical derivations, and empirical evidence.
+
+5. **CS5 (PASS):** Key results include appropriate uncertainty measures (BayesElo confidence intervals, percentile ranges, 95% CI). Puzzle solve rates lack explicit CI but have large sample size (n=10,000) ensuring precision.
+
+### Output Files Created
+
+- `evaluation/self_matching.ipynb` - Contains detailed analysis and verification
+- `evaluation/consistency_evaluation.json` - Structured JSON with checklist results and rationales
